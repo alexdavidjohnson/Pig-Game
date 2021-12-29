@@ -104,31 +104,5 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-// Reset the game (Alex version)
-/*
-btnNew.addEventListener('click', function () {
-  // playing
-  playing = true;
-  // Show the dice image
-  diceElement.classList.remove('hidden');
-  // Toggle to player 0
-  player0Element.classList.add('player--active');
-  player1Element.classList.remove('player--active');
-  // Remove the winning state
-  document
-    .querySelector(`.player--${activePlayer}`)
-    .classList.remove('player--winner');
-
-  // Reset the scores to 0
-  current0Element.textContent = 0;
-  current1Element.textContent = 0;
-  score0Element.textContent = 0;
-  score1Element.textContent = 0;
-
-  // Reset the active player to 0
-  activePlayer = 0;
-});
-*/
-
 // Reset the game (Instructor version)
 btnNew.addEventListener('click', init);

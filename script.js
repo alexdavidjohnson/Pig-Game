@@ -131,6 +131,4 @@ btnNew.addEventListener('click', function () {
 */
 
 // Reset the game (Instructor version)
-btnNew.addEventListener('click', function () {
-  init();
-});
+btnNew.addEventListener('click', init);
